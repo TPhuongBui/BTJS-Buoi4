@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,25 +12,89 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
+
 <body>
-    
+
     <div class="container">
+        <!-- BÀI TẬP 1: -->
         <form class="w-50">
+            <h2>Xuất 3 số theo thứ tự tăng dần</h2>
             <div class="form-group">
-                <input type="number" class="form-control"  id="inputSoThuNhat" placeholder="Nhập số thứ nhất">
-              </div>
-          
-              <div class="form-group">
-                  <input type="number" class="form-control"  id="inputSoThuHai" placeholder="Nhập số thứ 2">
-                </div>
-          
-              <div class="form-group">
-                  <input type="number" class="form-control"  id="inputSoThuBa" placeholder="Nhập số thứ 3">
-              </div>
-            
-              <button type="button" id="btnSapXep" class="btn btn-success">Sắp Xếp</button>
-              <p id="txtThongBao" class="alert alert-danger"></p>
+                <input type="number" class="form-control" id="inputSoThuNhat" placeholder="Nhập số thứ nhất">
+            </div>
+
+            <div class="form-group">
+                <input type="number" class="form-control" id="inputSoThuHai" placeholder="Nhập số thứ 2">
+            </div>
+
+            <div class="form-group">
+                <input type="number" class="form-control" id="inputSoThuBa" placeholder="Nhập số thứ 3">
+            </div>
+
+            <button type="button" onclick="sapXepTangDan() " id="btnSapXep" class="btn btn-success">Sắp Xếp</button>
+            <p id="txtThongBao" class="alert alert-danger"></p>
         </form>
+
+
+
+        <!-- <!-- BÀI TẬP 2: -->
+        <!-- <h2>Viết chương trình chào hỏi </h2>
+        <div class="form-group">
+            <label for="">Chọn thành viên</label>
+            <select class="form-control" id="selectPerson">
+                <option>Chọn thành viên</option>
+                <option value="Bố">Bố</option>
+                <option value="Mẹ">Mẹ</option>
+                <option value="Anh Trai">Anh Trai</option>
+                <option value="Em Gái">Em Gái</option>
+            </select>
+            <button type="button" id="btnGuiLoiChao" class="btn btn-info">Gửi lời chào</button>
+            <p id="txtHienThi"></p>
+        </div> -->
+
+
+
+        <!-- <!-- BÀI TẬP 3 -->
+        <!-- <form class="w-50">
+
+            <h2>Đếm số chẵn lẻ</h2>
+            <div class="form-group">
+                <input type="number" class="form-control" id="inputSo1" placeholder="Nhập số thứ nhất">
+            </div>
+
+            <div class="form-group">
+                <input type="number" class="form-control" id="inputSo2" placeholder="Nhập số thứ hai">
+            </div>
+
+            <div class="form-group">
+                <input type="number" class="form-control" id="inputSo3" placeholder="Nhập số thứ ba">
+            </div>
+
+            <button onclick="demSoChanLe()" type="button" id="btnKetQua" class="btn btn-success">Kết Quả</button>
+            <p id="txtThongBaoChanLe" class="alert alert-danger"></p>
+
+        </form> -->
+
+
+
+        <!-- <!-- BÀI TẬP 4 -->
+        <!-- <form class="w-50">
+
+            <div class="form-group">
+                <input type="number" class="form-control" id="inputCanh1" placeholder="Nhập cạnh thứ nhất">
+            </div>
+
+            <div class="form-group">
+                <input type="number" class="form-control" id="inputCanh2" placeholder="Nhập cạnh thứ 2">
+            </div>
+
+            <div class="form-group">
+                <input type="number" class="form-control" id="inputCanh3" placeholder="Nhập cạnh thứ 3">
+            </div>
+
+            <button onclick="xacDinhTamGiac()" type="button" id="btnTamGiac" class="btn btn-success">Kết Quả</button>
+            <p id="txtInRa" class="alert alert-danger"></p>
+        </form> -->
     </div>
 
 
@@ -49,4 +114,5 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
