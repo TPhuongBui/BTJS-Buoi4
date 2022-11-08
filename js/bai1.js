@@ -1,3 +1,14 @@
+/**
+ * + input: num1, num2, num3
+ * 
+ * + Các bước thực hiện:
+ *      tìm và lấy dữ liệu từ form
+ *      tìm số max và số min
+ *      tìm số nằm ở giữa(số thứ 2)
+ *      thông báo kết quả ra màn hình
+ * 
+ * output: Thứ tự tăng dần của 3 số nhập vào
+ */
 function sapXepTangDan() {
     var num1 = Number(document.getElementById("inputSoThuNhat").value);
     var num2 = Number(document.getElementById("inputSoThuHai").value);
@@ -9,7 +20,7 @@ function sapXepTangDan() {
     var thu2;
     var thu3;
 
-    // Timf max
+    // Tìm max
     if (num1 > num2) {
         max = num1;
     } else {

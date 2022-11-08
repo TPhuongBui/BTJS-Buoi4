@@ -1,9 +1,20 @@
+/**
+ * + input: các thành viên trong gia đình
+ * 
+ * + Các bước thực hiện:
+ *      tìm và lấy dữ liệu từ form
+ *      sử dụng hàm switch case để khi chọn vào các thành viên thì in ra các câu chào tương ứng
+ *      thông báo kết quả ra màn hình
+ * 
+ * output: lời chào của các thành viên khi được chọn
+ */
+
 function hoiThamNhau() {
     var thanhVien = document.getElementById("selectPerson").value;
     // document.getElementById("txtHienThi").innerHTML = "Xin chào " + thanhVien + " ! ";
     
-    var e = document.getElementById("txtHienThi");
-    e.classList.add("alert", "alert-danger");
+    var result = document.getElementById("txtHienThi");
+    result.classList.add("alert", "alert-danger");
     // console.log(thanhVien);
     switch (thanhVien) {
         case "Bố":
@@ -20,7 +31,7 @@ function hoiThamNhau() {
             break;
         default:
             document.getElementById("txtHienThi").innerHTML = "";
-            e.classList.remove("alert", "alert-danger");
+            result.classList.remove("alert", "alert-danger");
             alert("Quên chọn thành viên rồi kìa!");
             break;
     }
